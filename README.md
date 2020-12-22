@@ -20,7 +20,7 @@ To install a color variation, you must first install the Latte style.
 
 
 ## Download
-https://github.com/MrGabatt/LatteForPhpbb32/archive/master.zip
+https://github.com/MrGabatt/LatteForPhpbb33/archive/master.zip
 
 
 ## License
