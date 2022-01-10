@@ -117,7 +117,7 @@
 }
 
 /* Notifications
------------------------------------------*/
+----------------------------------------*/
 .rtl .notification_list ul li img {
 	float: right;
 	margin-left: 5px;
@@ -583,7 +583,6 @@ li.breadcrumbs span:first-child > a {
 /**
 * buttons.css
 */
-
 .rtl .caret {
 	border-right: 1px solid;
 	border-right-color: inherit;
@@ -1050,6 +1049,7 @@ li.breadcrumbs span:first-child > a {
 		float: none;
 		text-align: center;
 		margin-bottom: 5px;
+
 	}
 }
 
