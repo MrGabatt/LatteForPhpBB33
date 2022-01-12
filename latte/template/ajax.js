@@ -27,7 +27,7 @@ phpbb.addAjaxCallback('mark_forums_read', function(res) {
 
 	// Mark subforums read
 	$('a.subforum[class*="unread"]').removeClass('unread').addClass('read').children('.icon.icon-red').removeClass('icon-red').addClass('icon-blue');
-	
+
 	// Mark topics read if we are watching a category and showing active topics
 	if ($('#active_topics').length) {
 		phpbb.ajaxCallbacks.mark_topics_read.call(this, res, false);
@@ -199,7 +199,7 @@ phpbb.addAjaxCallback('zebra', function(res) {
  */
 phpbb.addAjaxCallback('vote_poll', function(res) {
 	if (typeof res.success !== 'undefined') {
-        var poll = $(this).closest('.topic_poll');
+		var poll = $(this).closest('.topic_poll');
 		var panel = poll.find('.panel');
 		var resultsVisible = poll.find('dl:first-child .resultbar').is(':visible');
 		var mostVotes = 0;

@@ -278,13 +278,13 @@ function insertUser(formId, value) {
 }
 
 function insert_marked_users(formId, users) {
-    'use strict';
+	'use strict';
 
-    $(users).filter(':checked').each(function() {
-        insertUser(formId, this.value);
-    });
+	$(users).filter(':checked').each(function() {
+		insertUser(formId, this.value);
+	});
 
-    window.close();
+	window.close();
 }
 
 function insert_single_user(formId, user) {
@@ -883,7 +883,7 @@ function parseDocument($container) {
 			}
 			// Copy the list items to the dropdown
 			if (!copied1) {
-				var $clones1 = $linksFirst.clone();
+				var $clones1 = $linksFirst.clone(true);
 				$menuContents.prepend($clones1.addClass('clone clone-first').removeClass('leftside rightside'));
 
 				if ($this.hasClass('post-buttons')) {
@@ -949,7 +949,7 @@ function parseDocument($container) {
 
 		// If there are any images in the links list, run the check again after they have loaded
 		$linksAll.find('img').each(function() {
-            $(this).on('load', function() {
+			$(this).on('load', function() {
 				check();
 			});
 		});
